@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="2" failures="0" hostname="DESKTOP-LN94IBO" name="pytest" skipped="0" tests="2" time="0.203" timestamp="2020-07-27T15:49:01.985527"><testcase classname="" file="test_dir/test_baidu.py" name="test_dir.test_baidu" time="0.000"><error message="collection failure">D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\poium\page_objects.py:126: in __init__
+    self.locator = (LOCATOR_LIST[self.k], self.v)
+E   KeyError: &apos;id&apos;
+
+During handling of the above exception, another exception occurred:
+test_dir\test_baidu.py:12: in &lt;module&gt;
+    from page.baidu_page import BaiduPage
+page\baidu_page.py:4: in &lt;module&gt;
+    class BaiduPage(Page):
+page\baidu_page.py:9: in BaiduPage
+    search_setting = PageElement(id=&quot;s-user-setting-menu&quot;, describe=&quot;搜索设置选项&quot;)
+D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\poium\page_objects.py:128: in __init__
+    raise FindElementTypesError(&quot;Element positioning of type &apos;{}&apos; is not supported. &quot;.format(self.k))
+E   poium.common.exceptions.FindElementTypesError: Message: Element positioning of type &apos;id&apos; is not supported.</error></testcase><testcase classname="pytest" name="internal" time="0.000"><error message="internal error">Traceback (most recent call last):
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\_pytest\main.py&quot;, line 191, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\_pytest\main.py&quot;, line 246, in _main
+    config.hook.pytest_collection(session=session)
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\hooks.py&quot;, line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\manager.py&quot;, line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\manager.py&quot;, line 87, in &lt;lambda&gt;
+    firstresult=hook.spec.opts.get(&quot;firstresult&quot;) if hook.spec else False,
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\callers.py&quot;, line 208, in _multicall
+    return outcome.get_result()
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\callers.py&quot;, line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\callers.py&quot;, line 187, in _multicall
+    res = hook_impl.function(*args)
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\_pytest\main.py&quot;, line 257, in pytest_collection
+    return session.perform_collect()
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\_pytest\main.py&quot;, line 452, in perform_collect
+    items = self._perform_collect(args, genitems)
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\_pytest\main.py&quot;, line 490, in _perform_collect
+    self.items.extend(self.genitems(node))
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\_pytest\main.py&quot;, line 684, in genitems
+    yield from self.genitems(subnode)
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\_pytest\main.py&quot;, line 685, in genitems
+    node.ihook.pytest_collectreport(report=rep)
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\hooks.py&quot;, line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\manager.py&quot;, line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\manager.py&quot;, line 87, in &lt;lambda&gt;
+    firstresult=hook.spec.opts.get(&quot;firstresult&quot;) if hook.spec else False,
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\callers.py&quot;, line 208, in _multicall
+    return outcome.get_result()
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\callers.py&quot;, line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\callers.py&quot;, line 187, in _multicall
+    res = hook_impl.function(*args)
+  File &quot;d:\programdata\anaconda3\envs\python3.7\lib\site-packages\pytest_html\plugin.py&quot;, line 608, in pytest_collectreport
+    self.append_failed(report)
+  File &quot;d:\programdata\anaconda3\envs\python3.7\lib\site-packages\pytest_html\plugin.py&quot;, line 372, in append_failed
+    self._appendrow(&quot;Error&quot;, report)
+  File &quot;d:\programdata\anaconda3\envs\python3.7\lib\site-packages\pytest_html\plugin.py&quot;, line 340, in _appendrow
+    result = self.TestResult(outcome, report, self.logfile, self.config)
+  File &quot;d:\programdata\anaconda3\envs\python3.7\lib\site-packages\pytest_html\plugin.py&quot;, line 166, in __init__
+    self.config.hook.pytest_html_results_table_row(report=report, cells=cells)
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\hooks.py&quot;, line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\manager.py&quot;, line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\manager.py&quot;, line 87, in &lt;lambda&gt;
+    firstresult=hook.spec.opts.get(&quot;firstresult&quot;) if hook.spec else False,
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\callers.py&quot;, line 208, in _multicall
+    return outcome.get_result()
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\callers.py&quot;, line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File &quot;D:\ProgramData\Anaconda3\envs\python3.7\lib\site-packages\pluggy\callers.py&quot;, line 187, in _multicall
+    res = hook_impl.function(*args)
+  File &quot;D:\cc\python\anaconda3\softwaretest\selenium\selenium3自动化测试实战\09\9.4\pyautoTest-master\conftest.py&quot;, line 29, in pytest_html_results_table_row
+    cells.insert(2, html.td(report.description))
+AttributeError: &apos;CollectReport&apos; object has no attribute &apos;description&apos;</error></testcase></testsuite></testsuites>
